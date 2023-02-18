@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(
-  subdomain({ baseUrl: "localhost:5000", prefix: "myprefix", logger: true })
+  subdomain({ baseUrl: "shot-ly.onrender.com", prefix: "myprefix", logger: true })
 );
 
 async function connectDB() {
