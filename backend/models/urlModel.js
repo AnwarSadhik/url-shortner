@@ -1,16 +1,18 @@
 const mongoose = require('mongoose');
 
-const urlSchema = mongoose.Schema({
-    longUrl: {
+const urlSchema = new mongoose.Schema({
+    originalURL: {
+      type: String,
+      required: true
+    },
+    shortID: {
+      type: String,
+      required: true
+    },
+    qr: {
         type: String,
-        required: true,
-    },
-    shortUrl: {
-        type: String
-    },
-    qrCode: {
-        type: String
-    },
-})
+        required: true
+    }
+  });
 
 module.exports = mongoose.model('Url',urlSchema)

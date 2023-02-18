@@ -1107,6 +1107,11 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
 
+express-subdomain-handler@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/express-subdomain-handler/-/express-subdomain-handler-0.1.0.tgz#d7e33adeab0978a397da6ea49f19b92669ef6e53"
+  integrity sha512-VpYk31ITaUyulthbcGXaQLJBLkvZE3L2MlYg3Xt4JvUOeGuinHpGgagGVCuRzzwxbv3bBTqNxkVB7ZcaC4YD5g==
+
 express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
