@@ -1,0 +1,6 @@
+POST http:localhost:5000/api/url
+Content-Type: application/json
+
+{
+    "longUrl": "https://open.spotify.com/playlist/7tx43jO8FFMbgIY4lx6o5b"
+}
