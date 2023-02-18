@@ -8,7 +8,7 @@ function App() {
 
   const postLink = async () => {
     axios
-      .post("http://localhost:5000/api/url", { originalURL })
+      .post("/api/url", { originalURL })
       .catch((err) => setError(err.response.data))
       .then((response) => {
         // console.log(response)

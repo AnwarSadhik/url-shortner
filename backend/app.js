@@ -4,7 +4,6 @@ const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const path = require("path");
 const mongoose = require("mongoose");
-
 const Url = require("./models/urlModel");
 const subdomain = require("express-subdomain-handler");
 
@@ -35,7 +34,7 @@ app.use("/api", require("./routes/allRoutes"));
 app.get("/myprefix/:thesubdomain", async function (req, res, next) {
   try {
     const shortID = req.params.thesubdomain;
-    console.log(shortID);
+    // console.log(shortID);
     const url = await Url.findOne({shortID})
     if (!url) {
       return res.status(404).send("Not found");
