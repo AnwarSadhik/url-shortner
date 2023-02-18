@@ -39,7 +39,7 @@ function App() {
           <span>
             Short URL:
             <a href={`https://${shortUrlData.shortID}.shot-ly.onrender.com`}>
-              {`https://${shortUrlData.shortID}.shot-ly.onrender.com`}
+              {`${shortUrlData.shortID}.shot-ly.onrender.com`}
             </a>
           </span>
           <img src={shortUrlData.qr} alt="QR" />
