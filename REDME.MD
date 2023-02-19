@@ -1,3 +1,4 @@
+https://shot-ly.onrender.com/
 
 [x] TESTING
 - tested with POSTMAN with different original long links.
