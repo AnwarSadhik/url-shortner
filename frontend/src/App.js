@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 function App() {
   const [originalURL, setOriginalURL] = useState("");
@@ -23,8 +22,11 @@ function App() {
     setError(null);
   };
 
+
+
+
   return (
-    <BrowserRouter>
+    <>
       <h4>URL shortner</h4>
       <form onSubmit={handleSubmt}>
         <input
@@ -47,17 +49,7 @@ function App() {
         </div>
       )}
       {error && <span>{error}</span>}
-      <Route
-        path="/:urlCode"
-        render={({ match }) => {
-          const urlCode = match.params.urlCode;
-          const longUrl = `https://${urlCode}.shot-ly.onrender.com`;
-
-          // Redirect to the long URL
-          return <Redirect to={longUrl} />;
-        }}
-      />
-    </BrowserRouter>
+    </>
   );
 }
 
